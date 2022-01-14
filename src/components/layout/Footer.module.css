@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    background-color: #282A35;
+    color: white;
+    border-top: 1px solid  #ffbb33;
+    text-align: center;
+    font-size: 18px;
+    justify-content: space-around;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+
+.item1{
+
+    padding-bottom: 15px;
+}
+.item2{
+    margin-top: 10px;
+}
+.item3{
+    padding-right: 15px;
+}
+
+.redesSociais{
+    line-height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
