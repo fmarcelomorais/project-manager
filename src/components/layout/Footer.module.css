@@ -4,18 +4,12 @@ footer {
     color: white;
     border-top: 1px solid  #ffbb33;
     text-align: center;
-    font-size: 18px;
     justify-content: space-around;
-    padding: 1em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 2.5em;
     }
 
 .item1{
-
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .item2{
     margin-top: 10px;
@@ -25,6 +19,7 @@ footer {
 }
 
 .redesSociais{
+
     line-height: 40%;
     display: flex;
     align-items: center;
