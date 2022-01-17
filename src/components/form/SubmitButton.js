@@ -1,4 +1,4 @@
-import Styles from './SubimitButton.module.css';
+import Styles from './SubmitButton.module.css';
 
 function SubimitButton({text}) {
     return ( 
