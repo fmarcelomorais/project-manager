@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "Code Book",
-      "budget": "100",
+      "name": "deb",
+      "budget": "1",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
