@@ -1,4 +1,4 @@
-.nemproject_continer{
+.newproject_continer{
     width: 500px;
     margin: 3em auto;
     padding: 3.5em;
@@ -12,16 +12,16 @@
     border-left: 1px solid rgba(255, 255, 255, 0.5);  
 }
 
-.nemproject_continer h1{
+.newproject_continer h1{
     text-align: center;
     margin-bottom: 1em;
 }
 
-.nemproject_continer p{
+.newproject_continer p{
     text-align: center;
 }
 
-.nemproject_continer h2{
+.newproject_continer h2{
     text-align: center;
     padding-top: 1em;
 }

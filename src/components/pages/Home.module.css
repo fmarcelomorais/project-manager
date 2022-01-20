@@ -6,6 +6,7 @@
     justify-content:space-between;
     text-align: center;
     padding: 4.5em;
+    flex-wrap: wrap;
 }
 
 .home_container h1{
@@ -23,6 +24,6 @@
 }
 
 .home_container img{
-    width: 450px;
+    width: 470px;
     margin: 2em 0;
 }

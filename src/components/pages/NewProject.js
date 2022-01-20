@@ -19,12 +19,12 @@ function NewProject() {
         })
             .then((resp) => resp.json())
             .then((data) => {
-                history('/project', { state: { message: 'Projeto criado com sucesso!' } })
+                history('/projects', { state: { message: 'Projeto criado com sucesso!' } })
             })
     }
 
     return (
-        <div className={Styles.nemproject_continer}>
+        <div className={Styles.newproject_continer}>
             <h1>Criar Projeto</h1>
             <p>Crie seu projeto para depois adicionar os serviços.</p>
             <h2>Formulário</h2>
