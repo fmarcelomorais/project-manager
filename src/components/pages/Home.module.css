@@ -5,7 +5,7 @@
     align-items: center;
     justify-content:space-between;
     text-align: center;
-    padding: 2.5em;
+    padding: 4.5em;
 }
 
 .home_container h1{
@@ -18,7 +18,7 @@
 }
 
 .home_container p{
-    margin-bottom: 1.5em;
+    margin-bottom: 3.5em;
     color: #7b7b7b;
 }
 
