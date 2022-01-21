@@ -1,0 +1,12 @@
+.loader_ontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    margin-top: 5.5em;
+    width: 50px;   
+}
