@@ -10,6 +10,17 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "Bolsa família ",
+      "budget": "10000000",
+      "category": {
+        "id": "4",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [

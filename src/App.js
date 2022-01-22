@@ -7,6 +7,7 @@ import NewProject from './components/pages/NewProject';
 import NavBar from './components/layout/NavBar'
 import Footer from './components/layout/Footer';
 import Projects from './components/pages/Projects';
+import Project from './components/pages/Project';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/contact" element={<Contact/>}></Route>
             <Route path="/newproject" element={<NewProject/>}></Route>
             <Route path="/projects" element={<Projects/>}></Route>
+            <Route path="/project/:id" element={<Project/>}></Route>
         </Routes>
       </Container>
       <Footer/>
