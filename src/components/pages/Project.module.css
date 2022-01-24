@@ -1,9 +1,7 @@
 .project_card{
     padding: 2em;
-    width: 25%;
-    margin: 4em;
-    min-width: 400px;
     border-radius: 20px;
+    margin: 5em;
 
     backdrop-filter: blur(10px);
     background: #ffffff33;
@@ -16,6 +14,7 @@
 .center{
     text-align: center;
 }
+
 
 .project_card h2{
     text-align: center;

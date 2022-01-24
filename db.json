@@ -13,14 +13,25 @@
     },
     {
       "name": "Bolsa família ",
-      "budget": "10000000",
+      "budget": "99",
       "category": {
-        "id": "4",
-        "name": "Infra"
+        "id": "1",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "name": "Dev",
+      "budget": "200",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [

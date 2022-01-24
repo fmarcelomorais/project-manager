@@ -73,7 +73,6 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
                 value={project.category ? project.category.id : ''}
                 
             />
-
             <div className={Styles.align}>
                 <SubimitButton text={btnText}/>
             </div>
