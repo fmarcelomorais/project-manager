@@ -74,6 +74,7 @@ function Project() {
                             category={project.category.name}
                             key={project.id}
                             handleRemove={removeProject}
+                            
                         />
                     ))}
                     {!removeloader && <Loading/>}

@@ -8,7 +8,7 @@
     box-shadow: 0 15px 35px #0000000d;
     border: 1px solid #ffffff40;
     border-top: 1px solid #ffffff80;
-    border-left: 1px solid #ffffff80;  
+    border-left: 1px solid #ffffff80; 
 }
 
 .center{
@@ -25,6 +25,7 @@
 
 .project_card p{
     margin-bottom: 1em;
+    overflow: hidden;
 }
 
 .project_card p span{
