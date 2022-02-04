@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Project Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### This site was without a doubt a great challenge, which put all my knowledge into practice!
 
-## Available Scripts
+### I made a website that manages expenses of one or more projects, it goes, from the creation of the project idea to the finalization with support for changes and accretions along the way, in a practical and fast way you can create and manage your project ideas .
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte1.png?raw=true)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Esse site foi um CRUD (Create, Read, Update, Delete) que usei tanto conhecimentos de Back end como Front end, as tecnologias usadas nesses projetos foram:
 
-### `npm test`
+<br> 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> ### ReactJS
+> ### CSS
+> ### Javascript
+> ### API REST
+> ### React Icons
 
-### `npm run build`
+<br> 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Website features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> ## Project creation part
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> #### Here you can give the name of the project, the budget and the category.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte2.png?raw=true)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<br>
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> ## Project management part
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+> #### Here you can see and manage all the projects that have been created.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br>
 
-### Analyzing the Bundle Size
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte4.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> ## Part of adding services and editing information
+<br>
 
-### Advanced Configuration
+> #### Here you can edit add services and many other essential things for your project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte3.png?raw=true)
