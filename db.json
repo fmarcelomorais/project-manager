@@ -7,16 +7,23 @@
         "id": "1",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 45,
+      "services": [
+        {
+          "name": "Site",
+          "cost": "45",
+          "description": "Compra  do domínio  do site.",
+          "id": "eeff612c-9e94-40b5-83fe-815f7bbfbbc4"
+        }
+      ],
       "id": 2
     },
     {
       "name": "Bolsa família ",
       "budget": "99",
       "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
@@ -26,8 +33,8 @@
       "name": "Dev",
       "budget": "200",
       "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
+        "id": "2",
+        "name": "Planejamento"
       },
       "cost": 200,
       "services": [

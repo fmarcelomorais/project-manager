@@ -6,7 +6,7 @@ import Container from '../layout/Container';
 import ProjectForm from '../project/ProjectForm';
 import Messager from '../layout/Messager';
 import ServiceForm from '../service/ServiceForm';
-import { parse, v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import ServiceCard from '../service/ServiceCard'
 
 function Project() {
