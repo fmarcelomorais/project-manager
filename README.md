@@ -10,7 +10,7 @@
 
 <br>
 
-### Esse site foi um CRUD (Create, Read, Update, Delete) que usei tanto conhecimentos de Back end como Front end, as tecnologias usadas nesses projetos foram:
+### This site was a CRUD (Create, Read, Update, Delete) that uses both Back end and Front end knowledge, the technologies used in the projects were:
 
 <br> 
 
