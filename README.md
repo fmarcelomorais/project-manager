@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+# Project Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Fiz um site que gerencia as despesas de um ou mais projetos, vai, desde a criação da ideia do projeto até a finalização com suporte para alterações e acréscimos ao longo do caminho, de forma prática e rápida você pode criar e gerenciar suas ideias de projetos .
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte1.png?raw=true)
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Este site foi um CRUD (Create, Read, Update, Delete) que utiliza tanto conhecimento de Back end quanto Front end, as tecnologias utilizadas nos projetos foram:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br> 
 
-### `npm test`
+> ### ReactJS
+> ### CSS
+> ### Javascript
+> ### API REST
+> ### React Icons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br> 
 
-### `npm run build`
+# Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> ## Parte de criação do projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `npm run eject`
+> #### Aqui você pode dar o nome do projeto, o orçamento e a categoria.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte2.png?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
+<br>
 
-## Learn More
+> ## Parte de gerenciamento de projetos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> #### Aqui você pode ver e gerenciar todos os projetos que foram criados.
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte4.png?raw=true)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br>
+<br>
 
-### Making a Progressive Web App
+> ## Parte da adição de serviços e edição de informações
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> #### Aqui você pode editar add services e muitas outras coisas essenciais para o seu projeto
+<br>
 
-### Advanced Configuration
+![alt text](https://github.com/kaiolabs/project-manager/blob/master/README%20files/Parte3.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br/>
 
-### Deployment
+# Instalando o projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br/>
 
-### `npm run build` fails to minify
+### Requisitos do projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br/>
+
+> #### [NPM 8.1.2 ou superior](https://nodejs.org/en/download/)
+> #### [Visual Studio Code](https://code.visualstudio.com/download)
+
+<br/>
+
+> ### 1 - No GitHub.com, navegue até a página principal do repositório. <br/>
+> ### 2 - Acima da lista de arquivos, clique em CODE.
+
+<br/>
+
+![alt text](https://docs.github.com/assets/cb-20366/images/help/repository/code-button.png?raw=true)
+
+<br/>
+
+> ### 3 - Copie o link mostrando.
+
+<br/>
+
+![alt text](https://docs.github.com/assets/cb-36330/images/help/repository/https-url-clone.png?raw=true)
+
+<br/>
+
+> ### 3 - Abra o Visual Studio Code <br/>
+> ### 4 - Abra a paleta de comandos com a combinação de teclas ctrl + Shift + P <br/>
+> ### 5 - No prompt da paleta de comandos, insira gitcl , selecione o comando GIT: CLONE e pressione Enter. <br/>
+
+<br/>
+
+![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/passo1.png?raw=true)
+
+<br/>
+
+> ### 6 - Quando for solicitada a URL do repositório, cole a URL que você copiou anteriormente.
+
+<br/>
+
+![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/passo2.png?raw=true)
+
+<br/>
+
+> ### 7 - Selecione (ou crie) o diretório local no qual você deseja clonar o projeto.
+
+<br/>
+
+![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/passo3.png?raw=true)
+
+<br/>
+
+> ### 8 - Depois de ter clonado o repositório clique  com o botão  direito  do mousse onde está sendo indicado
+
+<br/>
+
+![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/passo4.5.png?raw=true)
+
+<br/>
+
+> ### 9 - Depois clique em abrir no terminal integrado 
+
+<br/>
+
+![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/passo5.png?raw=true)
+
+<br/>
+
+> ### 10 - Agora digite ( npm i ) para instalar as dependências do projeto 
+
+<br/>
+
+![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/passo6.png?raw=true)
+
+<br/>
+
+> ### 10 - Agora digite ( npm start ) para iniciar o projeto 
+
+<br/>
+
+![alt text](https://github.com/kaiolabs/desafio-nexti/blob/master/README/passo7.png?raw=true)
+
