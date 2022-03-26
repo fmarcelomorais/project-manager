@@ -17,52 +17,6 @@
         }
       ],
       "id": 2
-    },
-    {
-      "name": "Bolsa família ",
-      "budget": "99",
-      "category": {
-        "id": "4",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "Dev",
-      "budget": "200",
-      "category": {
-        "id": "2",
-        "name": "Planejamento"
-      },
-      "cost": 200,
-      "services": [
-        {
-          "name": "kaio",
-          "cost": "170",
-          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, doloremque repudiandae? Alias quaerat adipisci cum ad placeat, sint facilis unde vero, aliquid magnam itaque nesciunt iusto neque consectetur, expedita animi.",
-          "id": "e1277f24-3606-4f2d-af56-ecd5429c0107"
-        },
-        {
-          "name": "Net",
-          "cost": "30",
-          "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, doloremque repudiandae? Alias quaerat adipisci cum ad placeat, sint facilis unde vero, aliquid magnam itaque nesciunt iusto neque consectetur, expedita animi.",
-          "id": "ea3ac876-76f3-4147-bf00-4fe891e2b8d5"
-        }
-      ],
-      "id": 4
-    },
-    {
-      "name": "Teste",
-      "budget": "10000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "categories": [

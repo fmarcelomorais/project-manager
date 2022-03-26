@@ -22,7 +22,7 @@ function Project() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch("http://localhost:5000/projects", {
+            fetch("http://18.230.70.230:3001/projects/", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -35,11 +35,11 @@ function Project() {
                 setRemoveloader(true)
             })
             .catch((err) => console.log(err))
-        }, 500)
+        }, 100)
     }, [])
 
-    function removeProject(id){
-        fetch(`http://localhost:5000/projects/${id}`, {
+    function removeProject(_id){
+        fetch(`http://18.230.70.230:3001/projects/delete/${_id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -47,8 +47,8 @@ function Project() {
         })
             .then((resp) => resp.json())
             .then((data) => {
-                setProjects(projects.filter((project) => project.id !== id))
-                setProjectMessage('Peojeto removido com sucesso!')          
+                setProjects(projects.filter((project) => project._id !== _id))
+                setProjectMessage('Projeto removido com sucesso!')          
             })
             .catch((err) => console.log(err))
     }
@@ -69,10 +69,10 @@ function Project() {
                     projects.map((project) => (
                         <ProjectCard
                             name={project.name}
-                            id={project.id}
+                            id={project._id}
                             budget={project.budget}
                             category={project.category.name}
-                            key={project.id}
+                            key={project._id}
                             handleRemove={removeProject}
                             
                         />

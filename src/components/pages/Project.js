@@ -22,7 +22,7 @@ function Project() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch(`http://localhost:5000/projects/${id}`, {
+            fetch(`http://18.230.70.230:3001/projects/${id}`, {
                 method: 'GET',
                 headers: {
                     'Contect-Type': 'application/json',

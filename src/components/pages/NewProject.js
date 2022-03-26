@@ -10,7 +10,7 @@ function NewProject() {
         project.cost = 0
         project.services = []
 
-        fetch('http://localhost:5000/projects', {
+        fetch('http://18.230.70.230:3001/projects/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
