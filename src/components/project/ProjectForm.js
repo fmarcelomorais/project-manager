@@ -3,7 +3,7 @@ import Styles from './ProjectForm.module.css';
 import Input from '../form/Input';
 import Select from '../form/Select';
 import SubimitButton from '../form/SubmitButton';
-
+const api = require('../service/api')
 
 function ProjectForm({handleSubmit, btnText, projectData}) {
 
@@ -11,24 +11,19 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
-        fetch("http://18.230.70.230:3001/categories", {
-            method: 'GET',
-            headers:{
-                'Contect-Type': 'application/json',
-            },
-        })
-        .then((resp) => resp.json())
-        .then((data) => {
-            setCategories(data)
-        })
-        .catch((err) => console.log(err))
+
+        api.get('categories')
+            .then((response)=> {
+                setCategories(response.data)
+            })
+            .catch((err) => console.log(err))
+       
     }, [])
 
     const submit = (e) => {
         e.preventDefault()
         handleSubmit(project)
-        //console.log(project)
-        
+               
     }
 
     function handleChange (e){
@@ -39,7 +34,7 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
         setProject({ 
             ...project, 
             category: {
-              id: e.target.value,
+              _id: e.target.value,
               name: e.target.options[e.target.selectedIndex].text,
         },
       })
@@ -70,7 +65,7 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
                 text="Selecione a categoria" 
                 options={categories}
                 handleOnChange={handleCategory}
-                value={project.category ? project.category.id : ''}
+                value={project.category ? project.category._id : ''}
                 
             />
             <div className={Styles.align}>
