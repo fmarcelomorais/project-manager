@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import ProjectForm from '../project/ProjectForm';
 import Styles from './NewProject.module.css';
+const api = require('../service/api')
 
 function NewProject() {
     const history = useNavigate()
@@ -10,17 +11,10 @@ function NewProject() {
         project.cost = 0
         project.services = []
 
-        fetch('http://18.230.70.230:3001/projects/create', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(project),
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                history('/projects', { state: { message: 'Projeto criado com sucesso!' } })
-            })
+        api.post('/projects/create', project)
+        .then(() => {
+            history('/projects', { state: { message: 'Projeto criado com sucesso!' } })
+        }).catch(error => console.log(error))
     }
 
     return (

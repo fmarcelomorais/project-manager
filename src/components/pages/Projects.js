@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react';
 import ProjectCard from "../project/ProjectCard";
 import Loading from "../layout/Loading";
 
+const api = require('../service/api')
+
 
 function Project() {
 
@@ -21,37 +23,26 @@ function Project() {
     }
 
     useEffect(() => {
-        setTimeout(() => {
-            fetch("http://18.230.70.230:3001/projects/", {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                setProjects(data)
-                //console.log(data)
-                setRemoveloader(true)
-            })
-            .catch((err) => console.log(err))
-        }, 100)
+
+    api.get("/projects")
+      .then((response) => {
+        setProjects(response.data)
+        setRemoveloader(true)  
+    }).catch(erro => console.log(erro))
+
+       
+
     }, [])
 
     function removeProject(_id){
-        fetch(`http://18.230.70.230:3001/projects/delete/${_id}`, {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
+
+        api.delete(`projects/delete/${_id}`)
+            .then(() => {
                 setProjects(projects.filter((project) => project._id !== _id))
-                setProjectMessage('Projeto removido com sucesso!')          
+                setProjectMessage('Projeto removido com sucesso!')
             })
-            .catch((err) => console.log(err))
-    }
+        
+    } 
 
     return (
         <div className={Styles.project_container}>
@@ -69,7 +60,7 @@ function Project() {
                     projects.map((project) => (
                         <ProjectCard
                             name={project.name}
-                            id={project._id}
+                            _id={project._id}
                             budget={project.budget}
                             category={project.category.name}
                             key={project._id}

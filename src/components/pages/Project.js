@@ -6,12 +6,13 @@ import Container from '../layout/Container';
 import ProjectForm from '../project/ProjectForm';
 import Messager from '../layout/Messager';
 import ServiceForm from '../service/ServiceForm';
-import { v4 as uuidv4 } from 'uuid';
 import ServiceCard from '../service/ServiceCard'
+const api = require('../service/api')
+
 
 function Project() {
 
-    const { id } = useParams()
+    const { _id } = useParams()
 
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
@@ -21,21 +22,15 @@ function Project() {
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        setTimeout(() => {
-            fetch(`http://18.230.70.230:3001/projects/${id}`, {
-                method: 'GET',
-                headers: {
-                    'Contect-Type': 'application/json',
-                },
-            })
-                .then((resp) => resp.json())
-                .then((data) => {
-                    setProject(data)
-                    setServices(data.services)
-                })
-                .catch((err) => console.log(err))
-        }, 500)
-    }, [id])
+        // Seleciona projeto pelo id
+        api.get(`projects/project/${_id}`)
+        .then((response) => {           
+            setProject(response.data)
+            setServices(response.data.services)
+        }).catch((err) => console.log(err))
+        
+        
+    }, [_id])
 
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
@@ -45,12 +40,10 @@ function Project() {
         setShowServiceForm(!showServiceForm)
     }
 
-    function createService(project) {
-        // last service
+    function createService() {
+
         const lastService = project.services[project.services.length - 1]
-
-        lastService.id = uuidv4()
-
+  
         const lastServiceCost = lastService.cost
 
         const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
@@ -66,22 +59,17 @@ function Project() {
         // add service cost to project cost total
         project.cost = newCost
 
-        fetch(`http://localhost:5000/projects/${project.id}`, {
-            method: 'PATCH',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(project),
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                setServices(data.services)
-                setShowServiceForm(!showServiceForm)
-                setMessage('Serviço adicionado!')
-                setType('success')
-            })
+        
+        api.patch(`projects/edite/${_id}`,project)
+        .then((response) => {           
+            setServices(response.data.services)
+            setShowServiceForm(!showServiceForm)
+            setMessage('Serviço adicionado!')
+            setType('success')
+        }).catch(erro => console.log(erro))
+            
+        
     }
-
 
     function editPost(project) {
         setMessage('')
@@ -93,43 +81,30 @@ function Project() {
             return false
         }
 
-        fetch(`http://localhost:5000/projects/${project.id}`, {
-            method: 'PATCH',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(project),
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                setServices(data.services)
-                setShowServiceForm(!showServiceForm)
-                setMessage('Serviço adicionado!')
-                setType('success')
-            })
+        api.patch(`projects/edite/${_id}`, project)
+        .then((response) => {           
+            setServices(response.data.services)
+            setShowServiceForm(!showServiceForm)
+            setMessage(`Orçamento foi alterado para R$ ${Number(project.budget).toFixed(2)}`)
+            setType('success')
+        }).catch(erro => console.log(erro))
+   
     }
 
     function removeService(id, cost) {
-        const servicesUpdated = project.services.filter(
-          (service) => service.id !== id,
-        )
-    
+
+        const servicesUpdated = project.services.filter(service => service[id] !== id ) 
         const projectUpdated = project
-    
+        
         projectUpdated.services = servicesUpdated
+        
+        projectUpdated.services.splice(id, 1)
         projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
-    
-        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
-          method: 'PATCH',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(projectUpdated),
-        })
-          .then((resp) => resp.json())
-          .then((data) => {
-            setProject(projectUpdated)
+
+        api.patch(`projects/edite/${project._id}`, projectUpdated)
+          .then(() => {
             setServices(servicesUpdated)
+            setProject(projectUpdated)
             setMessage('Serviço removido com sucesso!')
           })
       }
@@ -194,13 +169,13 @@ function Project() {
                             <h2>Serviços</h2>
                             <Container customClass="start">
                                 {services.length > 0 &&
-                                    services.map((service) => (
+                                    services.map((service, i) => (
                                         <ServiceCard
-                                            id={service.id}
+                                            id={i}
                                             name={service.name}
                                             cost={service.cost}
                                             description={service.description}
-                                            key={service.id}
+                                            key={i}
                                             handleRemove={removeService}
                                         />
                                     ))}
