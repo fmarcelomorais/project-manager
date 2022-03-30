@@ -11,8 +11,9 @@ function ServiceCard({ id, name, cost, description, handleRemove }) {
   return (
     <div className={Styles.project_card}>
       <h2>{name}</h2>
+        <p hidden><span>Cód:</span> {id}</p>
       <p>
-        <span>Custo total:</span> R${cost}
+        <span>Custo total:</span> R$ {cost}
       </p>
       <p>{description}</p>
       <div>

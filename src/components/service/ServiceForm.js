@@ -10,14 +10,16 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
         e.preventDefault()
         projectData.services.push(service)
         handleSubmit(projectData)
+        
     }
 
     function handleChange(e) {
-        setService({ ...service, [e.target.name]: e.target.value })
+        setService({...service, [e.target.name]: e.target.value })
     }
 
     return (
         <form onSubmit={submit} className={Styles.form}>
+          
           <Input
             type="text"
             text="Nome do serviço"
